@@ -10,7 +10,7 @@ class Recipe:
     # Describe each Recipe
     def __repr__(self):
         return f"This recipe is {self.name}, it needs {self.num_ingredients} ingredients totaling {self.calories} calories with a preparation time of {self.prep_time} minutes and a cooking time of {self.cook_time} minutes."
-    # Total Recipe Making time
+    # Total Recipe Making time, not implemented in the program yet.
     def total_cook_time(self):
         total_time = self.cook_time + self.prep_time
         return (f"The total making time for this Recipe is {total_time}")
@@ -168,7 +168,7 @@ welcome = ("""\nWelcome to the Recipe Book, we currently count with the followin
     3 - Pork Sausage Spaghetti Bolognese.
     4 - Chicken Sausage, Couscous & Kale Soup
       """)
-# print(welcome)
+
 while True:
     print(welcome)
     choice = input("What recipe would you like to make today? Type number and press Enter, to Exit type \"0\" and Enter: ")
@@ -183,4 +183,4 @@ while True:
     elif choice == "0":
         break
     else:
-        continue
+            continue
